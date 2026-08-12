@@ -6,11 +6,10 @@ export default function Page() {
       {/* 1. Fixed background div */}
       <div className="hero-bg fixed inset-0 -z-20"></div>
       
-      {/* 1b. Black gradient overlay */}
-      <div className="fixed inset-0 -z-20 bg-gradient-to-b from-black/35 via-transparent to-black/80 pointer-events-none"></div>
+      {/* 1b. Soft black gradient overlay (kept so the white text remains readable) */}
+      <div className="fixed inset-0 -z-20 bg-gradient-to-b from-black/30 via-transparent to-black/80 pointer-events-none"></div>
       
-      {/* 2. Fixed grain overlay */}
-      <div className="grain-overlay fixed inset-0 -z-10 opacity-30 mix-blend-overlay pointer-events-none"></div>
+      {/* (The artificial grain overlay has been completely removed to restore image clarity) */}
 
       {/* 3 & 4. Interactive Layer */}
       <ClientApp />
